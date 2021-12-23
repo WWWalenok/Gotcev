@@ -122,7 +122,7 @@ void main()
 	int Count = 50;
 
 	PoliLine
-		Base(Count, 0, sf::Color(255, 255, 255, 128)),
+		Base(Count, 0, sf::Color(255, 0, 0, 128)),
 		BaseExp(Count, 0, sf::Color::Yellow),
 		Ideal(Count, 0, sf::Color(255, 255, 255)),
 		Exp1(Count, 0, sf::Color::Red),
@@ -557,13 +557,16 @@ void main()
 
 		window.clear();
 
-		window.draw(Base);
+
 		//window.draw(Ideal);
 		//window.draw(BaseExp);
 		//window.draw(Exp1);
-		window.draw(Ap1);
+		//window.draw(Ap1);
 		//window.draw(Exp2);
 		window.draw(Ap2);
+
+
+		window.draw(Base);
 
 		log << ec << ',' << lc << ',' << ac << ',' << as << ',' << ps << ',' << hs << std::endl;
 
